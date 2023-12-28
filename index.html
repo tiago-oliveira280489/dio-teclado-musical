@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador - Teclado musical</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Teclado musical</h2>
+            <div class="column volume-slider">
+                <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+            <div class="column keys-check">
+                <span>Teclas</span> <input type="checkbox" checked>
+            </div>
+        </header>
+        <ul class="piano-keys">
+            <li class="key white" data-key="A"><span>A</span></li> <!-- C -->
+            <li class="key black" data-key="W"><span>W</span></li> <!-- C# -->
+            <li class="key white" data-key="S"><span>S</span></li> <!-- D -->
+            <li class="key black" data-key="E"><span>E</span></li> <!-- D# -->
+            <li class="key white" data-key="D"><span>D</span></li> <!-- E -->
+            <li class="key white" data-key="F"><span>F</span></li> <!-- F -->
+            <li class="key black" data-key="T"><span>T</span></li> <!-- F# -->
+            <li class="key white" data-key="G"><span>G</span></li> <!-- G -->
+            <li class="key black" data-key="Y"><span>Y</span></li> <!-- G# -->
+            <li class="key white" data-key="H"><span>H</span></li> <!-- A -->
+            <li class="key black" data-key="U"><span>U</span></li> <!-- A# -->
+            <li class="key white" data-key="J"><span>J</span></li> <!-- B -->
+            <li class="key white" data-key="K"><span>K</span></li> <!-- C -->
+            <li class="key black" data-key="O"><span>O</span></li> <!-- C# -->
+            <li class="key white" data-key="L"><span>L</span></li> <!-- D -->
+            <li class="key black" data-key="P"><span>P</span></li> <!-- D# -->
+            <li class="key white" data-key=";"><span>;</span></li> <!-- E -->
+        </ul>
+    </div>
+    <script src="./src/scripts/main.js" defer></script>
+</body>
+
+</html>
